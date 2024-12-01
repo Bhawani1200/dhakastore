@@ -19,8 +19,8 @@ const Navbar = () => {
         {/* LEFT */}
         <div className="w-1/3">
         <Link href="/">
-        <Image src="/nike.webp" alt="" height={64} width={64}/>
-        <div className="text-2xl tracking-wide text-black">CHAUBISEY</div>
+        <Image src="/logo.png" alt="" height={200} width={200}/>
+        {/* <div className="text-2xl tracking-wide text-black">CHAUBISEY</div> */}
         </Link>
         </div>
         {/* RIGHT */}
