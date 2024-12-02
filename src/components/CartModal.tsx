@@ -1,12 +1,82 @@
-"use client"
-import React from 'react'
+"use client";
+import Image from "next/image";
+import React from "react";
 
 const CartModal = () => {
+  const cartItems = true;
   return (
-    <div>
-      
+    <div className="w-max absolute p-4 rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] bg-white text-black top-12 right-0 flex flex-col gap-6 z-20">
+      {!cartItems ? (
+        <div className="text-black">Cart is empty</div>
+      ) : (
+        <>
+         {/* LIST */}
+          <div className="flex flex-col gap-8">
+            {/* ITEM */}
+            <div className="flex gap-4">
+              <Image
+                src="/dhaka.jpg"
+                alt=""
+                height={200}
+                width={200}
+                className="object-cover rounded-md"
+              />
+              <div className="flex flex-col justify-between w-full">
+                {/* TOP */}
+                <div className="">
+                  {/* TITLE */}
+                  <div className="flex items-center justify-between gap-8">
+                    <h3 className="font-semibold">Product Name</h3>
+                    <div className="p-1 bg-gray-50 rounded-sm">$40</div>
+                  </div>
+                  {/* DESC */}
+                  <div className="text-sm text-gray-500">available</div>
+                </div>
+                {/* BOTTOM */}
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-500">Qty.2</span>
+                  <span className="text-blue-500">Remove</span>
+                </div>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <Image
+                src="/dhaka.jpg"
+                alt=""
+                height={200}
+                width={200}
+                className="object-cover rounded-md"
+              />
+              <div className="flex flex-col justify-between w-full">
+                {/* TOP */}
+                <div className="">
+                  {/* TITLE */}
+                  <div className="flex items-center justify-between gap-8">
+                    <h3 className="font-semibold">Product Name</h3>
+                    <div className="p-1 bg-gray-50 rounded-sm">$40</div>
+                  </div>
+                  {/* DESC */}
+                  <div className="text-sm text-gray-500">available</div>
+                </div>
+                {/* BOTTOM */}
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-500">Qty.2</span>
+                  <span className="text-blue-500">Remove</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* BOTTOM */}
+          <div>
+            <div>
+              <span>Subtotal</span>
+              <span>$50</span>
+            </div>
+          </div>
+        </>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default CartModal
+export default CartModal;
