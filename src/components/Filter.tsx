@@ -3,7 +3,7 @@ import React from "react";
 const Filter = () => {
   return (
     <div className="mt-12 flex justify-between">
-      <div className="flex gap-6 ">
+      <div className="flex gap-6 flex-wrap">
         <select
           name="type"
           id=""
@@ -28,27 +28,37 @@ const Filter = () => {
         <select
           name="type"
           id=""
-          className="py-2 px-4 rounded-2xl text-xs font-medium bg-[#EBEDED]"
+          className="text-black py-2 px-4 rounded-2xl text-xs font-medium bg-[#EBEDED]"
         >
-          <option>Type</option>
-          <option value="physical">Male</option>
-          <option value="Digital">Female</option>
+          <option className="text-black">Size</option>
+          <option value="physical">L</option>
+          <option value="Digital">M</option>
+          <option value="Digital">XL</option>
         </select>
         <select
           name="type"
           id=""
-          className="py-2 px-4 rounded-2xl text-xs font-medium bg-[#EBEDED]"
+          className="text-black py-2 px-4 rounded-2xl text-xs font-medium bg-[#EBEDED]"
         >
-          <option>Type</option>
+          <option>Colour</option>
+          <option value="physical text-black">physical</option>
+          <option value="Digital">Digital</option>
+        </select>
+        <select
+          name="type"
+          id=""
+          className="text-black py-2 px-4 rounded-2xl text-xs font-medium bg-[#EBEDED]"
+        >
+          <option>Category</option>
           <option value="physical">physical</option>
           <option value="Digital">Digital</option>
         </select>
         <select
           name="type"
           id=""
-          className="py-2 px-4 rounded-2xl text-xs font-medium bg-[#EBEDED]"
+          className="text-black py-2 px-4 rounded-2xl text-xs font-medium bg-[#EBEDED]"
         >
-          <option>Type</option>
+          <option>All Filters</option>
           <option value="physical">physical</option>
           <option value="Digital">Digital</option>
         </select>
