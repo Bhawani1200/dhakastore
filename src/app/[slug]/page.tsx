@@ -2,7 +2,7 @@ import React from "react";
 import ListPage from "../list/page";
 import ProductImages from "@/components/ProductImages";
 import CustomizeProducts from "@/components/CustomizeProducts";
-
+import Add from "@/components/Add";
 const SinglePage = () => {
   return (
     <div className="px-4 md:px-8 lg:px-16 2xl:px-64 relative flex flex-col lg:flex-row gap-16">
@@ -26,6 +26,32 @@ const SinglePage = () => {
         </div>
         <div className="h-[2px] bg-gray-100" />
         <CustomizeProducts />
+        <Add />
+        <div className="h-[2px] bg-gray-100" />
+        <div className="text-sm">
+          <h4 className="font-medium mb-4">Title</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            nihil? Libero aperiam delectus, cum minima recusandae deserunt autem
+            voluptatibus. Repellat!
+          </p>
+        </div>
+        <div className="text-sm">
+          <h4 className="font-medium mb-4">Title</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            nihil? Libero aperiam delectus, cum minima recusandae deserunt autem
+            voluptatibus. Repellat!
+          </p>
+        </div>
+        <div className="text-sm">
+          <h4 className="font-medium mb-4">Title</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            nihil? Libero aperiam delectus, cum minima recusandae deserunt autem
+            voluptatibus. Repellat!
+          </p>
+        </div>
       </div>
     </div>
   );
