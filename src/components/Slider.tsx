@@ -16,7 +16,7 @@ const slides = [
     id: 2,
     title: "Winter Sale Collection",
     description: "Sale! ,Upto 50% off!",
-    img: "/dhaka5.jpg",
+    img: "/piece.jpg",
     url: "/",
     bg: "bg-gradient-to-r form-pink-50 to-blue-50",
   },
@@ -24,7 +24,7 @@ const slides = [
     id: 3,
     title: "Spring Sale Collection",
     description: "Sale! ,Upto 50% off!",
-    img: "/dhaka6.jpg",
+    img: "/beuli.jpg",
     url: "/",
     bg: "bg-gradient-to-r form-blue-50 to-yellow-50",
   },
@@ -32,12 +32,12 @@ const slides = [
 const Slider = () => {
   const [current, setCurrent] = useState(0);
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-  //   }, 3000);
-  //   return () => clearInterval(interval);
-  // }, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div className="h-[calc(100vh-80px)] overflow-hidden">
       <div
